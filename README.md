@@ -1,2 +1,121 @@
-# dsa_in_c
-Data structures and algorithms implemented in C, with notes, examples, and complexity analysis.
+# Data Structures and Algorithms in C
+
+![Language](https://img.shields.io/badge/language-C17-A8B9CC?logo=c&logoColor=white)
+![Status](https://img.shields.io/badge/status-learning-informational)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+> 使用 C 语言从零实现数据结构与经典算法，记录设计思路、复杂度分析、代码实现与测试过程。
+
+## 项目简介
+
+`dsa_in_c` 是一个持续更新的数据结构与算法学习仓库。项目以清晰、可读和可验证为目标，不只给出代码，也关注数据在内存中的组织方式、算法为什么正确，以及不同方案之间的时间与空间取舍。
+
+仓库中的示例优先采用标准 C 编写，尽量减少对特定平台和编译器的依赖，适合用于课程学习、基础复习和编程实践。
+
+## 学习路线
+
+### 基础知识
+
+- [ ] C 语言常用语法、指针与动态内存管理
+- [ ] 抽象数据类型与数据结构的基本概念
+- [ ] 时间复杂度与空间复杂度
+- [ ] 递归、迭代与常见数学基础
+
+### 数据结构
+
+- [ ] 数组与字符串
+- [ ] 线性表、单链表、双向链表与循环链表
+- [ ] 栈、队列、双端队列与优先队列
+- [ ] 哈希表与集合
+- [ ] 二叉树、二叉搜索树、平衡树与堆
+- [ ] 字典树、并查集与其他常用结构
+- [ ] 图的存储与基本操作
+
+### 算法
+
+- [ ] 查找与排序
+- [ ] 树与图的遍历
+- [ ] 最短路径、最小生成树与拓扑排序
+- [ ] 分治、贪心与回溯
+- [ ] 动态规划
+- [ ] 字符串匹配
+- [ ] 位运算与常用算法技巧
+
+## 目录规划
+
+```text
+dsa_in_c/
+├── docs/                   # 原理说明、学习笔记与复杂度分析
+├── include/                # 对外公开的头文件
+├── src/
+│   ├── data_structures/    # 数据结构实现
+│   └── algorithms/         # 算法实现
+├── examples/               # 独立、可运行的使用示例
+├── tests/                  # 单元测试与边界测试
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+目录会随着学习进度逐步建立和调整。每个主题原则上包含以下内容：
+
+- 原理与适用场景
+- 接口设计和 C 语言实现
+- 时间、空间复杂度分析
+- 可运行示例
+- 正常情况、边界情况与异常情况测试
+
+## 编码约定
+
+- 默认使用 **C17** 标准。
+- 文件、变量和函数采用 `snake_case` 命名。
+- 头文件负责接口声明，源文件负责具体实现。
+- 动态申请的内存必须明确所有权并正确释放。
+- 对空指针、越界、空结构和分配失败等情况进行检查。
+- 示例代码以表达原理为主，同时保持必要的健壮性。
+- 编译时尽量开启警告，并在提交前处理相关警告。
+
+## 编译与运行
+
+推荐使用 GCC 或 Clang。单个示例可以使用类似下面的命令编译：
+
+```bash
+gcc -std=c17 -Wall -Wextra -Wpedantic -O2 path/to/example.c -o build/example
+```
+
+运行程序：
+
+```bash
+# Linux / macOS
+./build/example
+
+# Windows PowerShell
+.\build\example.exe
+```
+
+具体模块需要的源文件、头文件路径和编译命令，将写在对应目录的 `README.md` 中。
+
+## 如何参与
+
+欢迎提交 Issue 或 Pull Request，包括但不限于：
+
+- 修复实现错误或内存问题
+- 补充测试用例和边界情况
+- 改进注释、文档与复杂度分析
+- 提供更清晰或更高效的实现方案
+
+提交代码前，请确保代码能够正常编译，并尽量保持一次提交只解决一个明确的问题。
+
+## 使用说明
+
+本仓库主要用于学习与交流。代码强调教学可读性，未必适合直接用于生产环境；在实际项目中使用前，请根据业务需求进行充分测试和安全评估。
+
+## 许可证
+
+本项目采用 [MIT License](LICENSE) 开源许可证。
+
+## 作者
+
+**jszcmd**
+
+- GitHub：[@jszcmd](https://github.com/jszcmd)

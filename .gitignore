@@ -1,55 +1,94 @@
-# Prerequisites
+# Build directories
+build/
+bin/
+out/
+debug/
+release/
+cmake-build-*/
+
+# Dependency files
 *.d
 
 # Object files
 *.o
-*.ko
 *.obj
-*.elf
+*.ko
+*.lo
 
-# Linker output
+# Static and shared libraries
+*.a
+*.lib
+*.la
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Executables and linker output
+*.exe
+*.out
+*.app
+*.elf
+*.hex
 *.ilk
 *.map
 *.exp
 
-# Precompiled Headers
+# Precompiled headers
 *.gch
 *.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
+# Debug and profiling files
 *.dSYM/
+*.dwo
 *.su
 *.idb
 *.pdb
+*.gcda
+*.gcno
+*.gcov
+coverage/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+install_manifest.txt
+_deps/
 
-# debug information files
-*.dwo
+# Visual Studio user files
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Visual Studio Code local settings
+.vscode/
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+.cache/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Runtime output
+*.log
+core
+core.*
+
+# Local environment files
+.env
+.env.*
+!.env.example
